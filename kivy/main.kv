@@ -1,0 +1,17 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Image:
+        id: image_view
+        source: 'assets/captured_image.png'
+        size_hint: 1, 0.7
+
+    Button:
+        text: "Capture Image"
+        size_hint: 1, 0.1
+        on_press: app.capture_image()
+
+    Label:
+        id: text_label
+        text: "Extracted Text will appear here."
+        size_hint: 1, 0.4
